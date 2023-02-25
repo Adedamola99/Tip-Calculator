@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Script</title>
+    <link rel="stylesheet" href="App.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,600;0,700;1,400;1,500;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <div class="App">
+        <img src="./images/logo.svg" class="logo" alt="" />
+  
+        <div class="container">
+          <div class="tip-calc-container">
+            <div class='bill-section'>
+              <h5>Bill</h5>
+              <label>
+                <span class="inputOverlay"><img src="./images/icon-dollar.svg" alt="" /></span>
+                <input type="number" class='bill' value="0"/>
+              </label>
+            </div>
+  
+            <div class='tip-selection-section'>
+              <h5>Select Tip %</h5>
+              <div class="selection-container">
+                <button class="selection" value="5">5%</button>
+                <button class="selection" value="10">10%</button>
+                <button class="selection" value="15">15%</button>
+                <button class="selection" value="25">25%</button>
+                <button class="selection" value="50">50%</button>
+                <input type="number" class="selection custom" placeholder='Custom'/>
+              </div>
+            </div>
+  
+            <div class="people-container">
+              <div class="people">
+                <h5>Number of People</h5>
+                <h5 class="error">Can't be zero</h5>
+                
+              </div>
+  
+              <label>
+                <span class="inputOverlay"><img src="./images/icon-person.svg" alt="" /></span>
+                <input type="number" class='person-no' value="0"/>
+              </label>
+            </div>
+  
+          </div>
+  
+          <div class="tip-result-container">
+            <div class='sub-container'>
+              <div class="tip-amount-container">
+                <div>
+                  <h5 class="name">Tip Amount</h5>
+                  <p>/person</p>
+                </div>
+                
+                <span class='span'><img src="./images/currency-dollar.svg" alt="" /><h1 id="total-amount">0.00</h1></span>
+              </div>
+              
+              <div class="total">
+                <div>
+                  <h5 class="name">Total</h5>
+                  <p>/person</p>
+                </div>
+                
+                <span class='span'><img src="./images/currency-dollar.svg" alt="" /><h1 id="total-per-person">0.00</h1></span>
+              </div>
+            </div>
+            
+          <button type="reset" class='reset'>RESET</button>
+        </div>
+      </div>
+    </div> 
+  </body>
+    <script src="/script.js"></script>
+</html>
