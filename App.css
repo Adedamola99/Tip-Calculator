@@ -244,6 +244,14 @@ button:hover {
     gap: 2em;
   }
 
+  .error {
+    width: unset;
+  }
+
+  .people {
+    width: 86%;
+  }
+
 }
 
 
